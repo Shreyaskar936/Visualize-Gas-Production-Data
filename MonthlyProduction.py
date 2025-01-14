@@ -6,7 +6,7 @@ import pandas as pd
 from PIL import Image, ImageTk, ImageOps
 from matplotlib.ticker import MaxNLocator
 
-data = pd.read_csv(r"Project1\Monthly_Production_Volume_Students.csv")
+data = pd.read_csv(r"Monthly_Production_Volume_Students.csv")
 data['PRODUCTION_DATE'] = pd.to_datetime(data['PRODUCTION_DATE'], format='%d-%b-%y')
 
 data_years = ["All"] + sorted(data['PRODUCTION_DATE'].dt.year.unique(), reverse=True)
