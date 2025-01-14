@@ -158,7 +158,7 @@ Button(f1, text="CLEAR", command=clear, font=("Verdana", 14, "bold"), bg="#82031
        activebackground="#7661ff", activeforeground="#ffffff", relief=RAISED, bd=3,
        overrelief=SUNKEN).grid(row=4, column=1, pady=7, ipady=6, sticky=E, padx=19)
 
-img = Image.open(r"Project1\ongc.png")
+img = Image.open(r"ongc.png")
 img = img.resize((421, 270))
 img = ImageOps.expand(img, border=5, fill='#45191d')
 p = ImageTk.PhotoImage(img)
