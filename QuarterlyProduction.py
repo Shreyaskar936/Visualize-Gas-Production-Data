@@ -6,7 +6,7 @@ import pandas as pd
 import seaborn as sns
 from PIL import Image, ImageTk, ImageOps
 
-data = pd.read_csv(r"Project2\Monthly_Production_Volume_Students.csv")
+data = pd.read_csv(r"Monthly_Production_Volume_Students.csv")
 data['PRODUCTION_DATE'] = pd.to_datetime(data['PRODUCTION_DATE'], format='%d-%b-%y')
 data['QUARTER'] = data['PRODUCTION_DATE'].dt.quarter
 
